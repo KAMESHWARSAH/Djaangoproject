@@ -1,0 +1,55 @@
+{% extends 'base.html' %} {% block title %} {% endblock title %} {% block body %}
+<style>
+    .cent {
+        text-align: center;
+        font-size: 35px;
+        border-radius: 100px;
+        height: 70px;
+        color: red;
+        margin-top: 5px;
+    }
+</style>
+<p class=cent element1> Select From Our Range Of Ice Cream
+    <p>>
+        <div class=container>
+            <div class="card-deck">
+                <div class="card">
+                    <img src="/static/img/card1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Choclate</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="container">
+                        <button type="button" class="btn btn-danger btn-lg btn-block">BUY NOW</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/static/img/cadr2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Choclate</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                    <div class="container-fluid">
+                        <button type="button" class="btn btn-danger btn-lg btn-block">BUY NOW</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/static/img/card3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Choclate</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    </div>
+                    <div class="container">
+                        <button type="button" class="btn btn-danger btn-lg btn-block">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <section>
+            <div>
+                <img src="/static/img/baner.jpg" height="400px" width="100%" alt="">
+            </div>
+        </section>
+
+        {% endblock body %}

@@ -1,0 +1,31 @@
+{% extends 'base.html' %} {% block title %} {% endblock title %} {% block body %}
+
+<div class="container px-0">
+    <img src="/static/img/contect.jpg" class="px-0" alt="">
+</div>
+<div>
+    <h1 class="text-center">contect us</h1>
+    <form class=container method="POST">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" class="form-control" id="" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" name="email" class="form-control" id="" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="number">Phone Number</label>
+            <input type="number" name="phone" class="form-control" id="" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="desc">Messege</label>
+            <textarea class="form-control" name="desc" id="" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Submit</button>
+    </form>
+
+</div>
+
+{% endblock body %}

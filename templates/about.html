@@ -1,0 +1,31 @@
+{% extends 'base.html' %} {% block title %} {% endblock title %} {% block body %}
+
+<div class="container px-0">
+    <img src="/static/img/mypic.JPG" height="600px" width="100%" class="px-0" alt="">
+</div>
+<div>
+    <h1 class="text-center">About Me</h1>
+    <form class=container>
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="name">NNAME</label>
+            <p>KAMESHWAR SAH</p>
+        </div>
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <p>kameshwarcse@gmail.com</p>
+        </div>
+        <div class="form-group">
+            <label for="number">Phone Number</label>
+            <p>9123474879</p>
+        </div>
+        <div class="form-group">
+            <label for="desc"></label>
+
+        </div>
+
+    </form>
+
+</div>
+
+{% endblock body %}
